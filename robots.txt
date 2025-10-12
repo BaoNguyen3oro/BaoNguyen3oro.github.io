@@ -1,0 +1,8 @@
+# robots.txt for https://BaoNguyen3oro.github.io
+User-agent: *
+Allow: /
+Disallow: /js/
+Disallow: /css/fonts/
+
+# Sitemap location
+Sitemap: https://BaoNguyen3oro.github.io/sitemap.xml
