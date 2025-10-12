@@ -3099,3 +3099,215 @@ body::after {
 		text-align: center;
 	}
 }
+/* ============================================
+   TERMINAL COMPONENT STYLES
+   ============================================ */
+
+/* Base Terminal Output */
+.terminal-output {
+	font-family: 'IBM Plex Mono', 'Courier New', monospace;
+	font-size: 0.85rem;
+	line-height: 1.7;
+	color: var(--net-text-primary);
+	background: transparent;
+	padding: 0;
+	margin: 0;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	overflow-x: auto;
+	text-shadow: 0 0 5px rgba(0, 255, 65, 0.3);
+}
+
+.terminal-output a {
+	color: var(--net-accent-cyan);
+	text-decoration: underline;
+	text-decoration-style: dotted;
+}
+
+.terminal-output a:hover {
+	color: var(--net-text-bright);
+	text-shadow: 0 0 10px rgba(0, 255, 65, 0.8);
+}
+
+.terminal-link {
+	color: var(--net-accent-cyan) !important;
+	text-decoration: underline;
+	text-decoration-style: dotted;
+	transition: all 0.2s ease;
+}
+
+.terminal-link:hover {
+	color: var(--net-text-bright) !important;
+	text-shadow: 0 0 10px rgba(0, 255, 65, 0.8);
+}
+
+/* Profile Terminal (About Section) */
+.profile-terminal {
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.profile-terminal .terminal-output {
+	font-size: 0.8rem;
+}
+
+/* Contracts Terminal (Resume Section) */
+.contracts-terminal {
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.contracts-terminal .terminal-output {
+	font-size: 0.8rem;
+}
+
+/* Archive Terminal (Portfolio Section) */
+.archive-terminal {
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.archive-terminal .terminal-output {
+	font-size: 0.8rem;
+}
+
+/* Broadcast Terminal (Blog Section) */
+.broadcast-terminal {
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.broadcast-terminal .terminal-output {
+	font-size: 0.8rem;
+}
+
+.broadcast-terminal .terminal-btn {
+	display: inline-block;
+	margin-top: 1.5rem;
+	padding: 0.7rem 1.5rem;
+	border: 2px solid var(--net-accent-green);
+	background: transparent;
+	color: var(--net-accent-green);
+	text-decoration: none;
+	font-family: 'Share Tech Mono', monospace;
+	letter-spacing: 0.1em;
+	transition: all 0.2s ease;
+}
+
+.broadcast-terminal .terminal-btn:hover {
+	background: rgba(0, 255, 65, 0.1);
+	box-shadow: 0 0 20px rgba(0, 255, 65, 0.3);
+}
+
+/* Comms Terminal (Contact Section) */
+.comms-terminal {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.comms-terminal .terminal-output {
+	font-size: 0.8rem;
+}
+
+/* Page Titles Terminal Style */
+.page-title {
+	font-family: 'Share Tech Mono', monospace !important;
+	color: var(--net-accent-green) !important;
+	text-shadow: 0 0 10px rgba(0, 255, 65, 0.6);
+	font-size: 1.3rem !important;
+	letter-spacing: 0.1em;
+	margin-bottom: 3rem !important;
+}
+
+.page-title i {
+	margin-right: 0.8rem;
+	opacity: 0.7;
+}
+
+/* Section Backgrounds for Terminal Aesthetic */
+.one-page-layout .site-main > section {
+	background: 
+		linear-gradient(180deg, rgba(0, 255, 65, 0.02) 0%, rgba(0, 255, 65, 0.05) 50%, rgba(0, 255, 65, 0.02) 100%),
+		var(--net-bg-terminal) !important;
+}
+
+.one-page-layout .site-main > section:before {
+	background: none !important;
+	opacity: 0 !important;
+}
+
+/* Contact Section Background Override */
+#contact.has-bg-img {
+	background-blend-mode: overlay !important;
+	background-color: var(--net-bg-terminal) !important;
+}
+
+#contact.has-bg-img::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background: rgba(0, 8, 6, 0.85);
+	pointer-events: none;
+	z-index: 1;
+}
+
+#contact .content {
+	position: relative;
+	z-index: 2;
+}
+
+/* Responsive Terminal Styles */
+@media (max-width: 768px) {
+	.terminal-output {
+		font-size: 0.7rem;
+		line-height: 1.6;
+	}
+	
+	.profile-terminal .terminal-output,
+	.contracts-terminal .terminal-output,
+	.archive-terminal .terminal-output,
+	.broadcast-terminal .terminal-output,
+	.comms-terminal .terminal-output {
+		font-size: 0.7rem;
+	}
+	
+	.ascii-box {
+		padding: 1rem !important;
+	}
+	
+	.page-title {
+		font-size: 1rem !important;
+		margin-bottom: 2rem !important;
+	}
+}
+
+@media (max-width: 480px) {
+	.terminal-output {
+		font-size: 0.65rem;
+		line-height: 1.5;
+	}
+	
+	.profile-terminal .terminal-output,
+	.contracts-terminal .terminal-output,
+	.archive-terminal .terminal-output,
+	.broadcast-terminal .terminal-output,
+	.comms-terminal .terminal-output {
+		font-size: 0.65rem;
+	}
+}
+
+/* Remove old cyberpunk styles */
+.neo-hero:before,
+.neo-hero:after {
+	display: none !important;
+}
+
+.about-deck,
+.resume-deck,
+.cyberware-grid,
+.ops-timeline,
+.signal-row,
+.neon-timeline,
+.credential-board {
+	display: none !important;
+}
