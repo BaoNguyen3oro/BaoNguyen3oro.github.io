@@ -30,22 +30,22 @@
     -------------------------------------------- */
 
 :root {
-	/* Ultra Dark Matrix Theme */
-	--net-bg-void: #000000;
-	--net-bg-terminal: #0a0f0a;
-	--net-bg-card: rgba(10, 15, 10, 0.95);
-	--net-accent-green: #0dff0d;
-	--net-accent-amber: #ffb000;
-	--net-accent-cyan: #00d9ff;
-	--net-accent-red: #ff003c;
-	--net-text-primary: #0dff0d;
-	--net-text-dim: rgba(13, 255, 13, 0.5);
-	--net-text-bright: #00ff41;
-	--net-border: rgba(13, 255, 13, 0.4);
-	--net-border-dim: rgba(13, 255, 13, 0.2);
-	--net-scan-line: rgba(13, 255, 13, 0.08);
-	--net-shadow: 0 0 40px rgba(13, 255, 13, 0.25);
-	--net-glow: 0 0 15px rgba(13, 255, 13, 0.8);
+	/* Factory.ai Inspired Clean Theme */
+	--net-bg-void: #ffffff;
+	--net-bg-terminal: #f8f9fa;
+	--net-bg-card: rgba(255, 255, 255, 1);
+	--net-accent-green: #10b981;
+	--net-accent-amber: #f59e0b;
+	--net-accent-cyan: #3b82f6;
+	--net-accent-red: #ef4444;
+	--net-text-primary: #0a0d14;
+	--net-text-dim: rgba(100, 116, 139, 0.8);
+	--net-text-bright: #1a1a1a;
+	--net-border: rgba(226, 232, 240, 1);
+	--net-border-dim: rgba(241, 245, 249, 1);
+	--net-scan-line: rgba(0, 0, 0, 0.02);
+	--net-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+	--net-glow: 0 0 0 transparent;
 }
 
 /* ----- 1.1 ELEMENTS ----- */   
@@ -62,7 +62,7 @@ body {
  	position: relative; width: 100%; height: 100%;
 	}
 body {
-	 font-size: 1em; line-height: 1.7; -webkit-text-size-adjust: none; color: var(--net-text-primary); background: radial-gradient(120% 120% at 50% 0%, rgba(13, 255, 13, 0.03) 0%, transparent 70%), var(--net-bg-void);
+	 font-size: 1em; line-height: 1.7; -webkit-text-size-adjust: none; color: var(--net-text-primary); background: var(--net-bg-void);
 	 background-attachment: fixed; min-height: 100%;
 	}
 a {
@@ -91,7 +91,7 @@ body,
 input,
 textarea,
 select {
-	font-family: 'IBM Plex Mono', 'Courier New', monospace;
+	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 	}
 	
 /* HEADINGS */

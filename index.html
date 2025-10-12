@@ -25,7 +25,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		 
         <!-- FONTS -->
-        <link href='https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=IBM+Plex+Mono:wght@300;400;600;700&display=swap' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap' rel='stylesheet' type='text/css'>
             
         <!-- STYLES -->
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -37,6 +37,7 @@
         <link rel="stylesheet" type="text/css" href="css/animations.css">
         <link rel="stylesheet" type="text/css" href="css/align.css">
         <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/factory-theme.css">
         <link rel="stylesheet" type="text/css" href="css/768.css">
         
         <!-- INITIAL SCRIPTS -->
@@ -65,58 +66,52 @@
             
             
             <!-- HEADER -->
-            <header id="masthead" class="header" role="banner">
-            	
-                <a class="menu-toggle toggle-link"></a>
-                
-                <h1 class="site-title mobile-title">NGUYEN QUOC BAO</h1>
-                
-                <!-- header-wrap -->
-                <div class="header-wrap">
-                	
-                    <img src="images/site/resize_nqb.jpg" alt="Portrait of Nguyen Quoc Bao" loading="lazy">
-                
-                    <h1 class="site-title">NGUYEN QUOC BAO</h1>
-                    
-                    <!-- NAV MENU -->
-                    <nav id="primary-navigation" class="site-navigation primary-navigation" role="navigation" aria-label="Primary">
-                        <div class="nav-menu">
-                            <ul>
-                                
-                                <!-- InstanceBeginEditable name="Menu-Content" -->
-                                <li>
-                                    <a href="#/home">
-                                        <i class="pe-7s-home"></i>Home</a>
-                                </li>
-                                <li>
-                                    <a href="#/about">
-                                        <i class="pe-7s-user"></i>About Me</a>
-                                </li>
-                                <li>
-                                    <a href="#/resume">
-                                        <i class="pe-7s-id"></i>Resume</a>
-                                </li>
-                                <li>
-                                    <a href="#/portfolio">
-                                        <i class="pe-7s-glasses"></i>Portfolio</a>
-                                </li>
-                                <li>
-                                    <a href="#/blog">
-                                        <i class="pe-7s-notebook"></i>Blog</a>
-                                </li>
-                                
-                                <li>
-                                    <a href="#/contact">
-                                        <i class="pe-7s-call"></i>Contact</a>
-                                </li>
-
-
-                            <!-- InstanceEndEditable -->
-                                
-                            </ul>
-                        </div>
+            <header id="masthead" class="factory-header" role="banner">
+                <div class="factory-container">
+                    <nav class="factory-nav">
+                        <a href="#home" class="factory-logo">NQB</a>
+                        
+                        <button class="factory-menu-toggle" aria-label="Toggle menu">
+                            <span class="factory-menu-icon">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                        </button>
+                        
+                        <ul class="factory-nav-menu">
+                            <li><a href="#home" class="factory-nav-link">Home</a></li>
+                            <li><a href="#about" class="factory-nav-link">About</a></li>
+                            <li><a href="#resume" class="factory-nav-link">Resume</a></li>
+                            <li><a href="#portfolio" class="factory-nav-link">Portfolio</a></li>
+                            <li><a href="#blog" class="factory-nav-link">Blog</a></li>
+                            <li><a href="#contact" class="factory-nav-link">Contact</a></li>
+                        </ul>
                     </nav>
-                    <!-- NAV MENU -->
+                </div>
+            </header>
+            <!-- HEADER -->
+            
+            <!-- OLD HEADER - HIDDEN -->
+            <div style="display: none;">
+                <header class="header">
+                    <a class="menu-toggle toggle-link"></a>
+                    <h1 class="site-title mobile-title">NGUYEN QUOC BAO</h1>
+                    <div class="header-wrap">
+                        <img src="images/site/resize_nqb.jpg" alt="Portrait of Nguyen Quoc Bao" loading="lazy">
+                        <h1 class="site-title">NGUYEN QUOC BAO</h1>
+                        <nav id="primary-navigation" class="site-navigation primary-navigation" role="navigation" aria-label="Primary">
+                            <div class="nav-menu">
+                                <ul>
+                                    <li><a href="#/home"><i class="pe-7s-home"></i>Home</a></li>
+                                    <li><a href="#/about"><i class="pe-7s-user"></i>About Me</a></li>
+                                    <li><a href="#/resume"><i class="pe-7s-id"></i>Resume</a></li>
+                                    <li><a href="#/portfolio"><i class="pe-7s-glasses"></i>Portfolio</a></li>
+                                    <li><a href="#/blog"><i class="pe-7s-notebook"></i>Blog</a></li>
+                                    <li><a href="#/contact"><i class="pe-7s-call"></i>Contact</a></li>
+                                </ul>
+                            </div>
+                        </nav>
                     
                     
                     
@@ -169,55 +164,44 @@
                 
                	
                 <!-- PAGE : HOME -->
-                <section id="home" class="pt-page page-layout light-text home-section neo-hero">
-                	<!-- .content -->
-                    <div class="content">
-                    	<!-- .layout-medium -->
-                        <div class="layout-medium">
-                        	
-                            <div class="hero-terminal ascii-box" data-title="NETRUNNER_INTERFACE">
-                                <div class="terminal-boot">
-                                    <p class="terminal-line terminal-prompt">BOOT_SEQUENCE_INIT...</p>
-                                    <p class="terminal-line">LOADING NEURAL_DRIVERS<span class="dots">............</span> <span class="terminal-success">[OK]</span></p>
-                                    <p class="terminal-line">MOUNTING /home/netrunner/profile<span class="dots">....</span> <span class="terminal-success">[OK]</span></p>
-                                    <p class="terminal-line">ESTABLISHING NETWORK_LINK<span class="dots">...........</span> <span class="terminal-success">[OK]</span></p>
-                                    <p class="terminal-line terminal-success terminal-prompt">READY<span class="terminal-cursor"></span></p>
-                                </div>
-                                
-                                <div class="terminal-profile">
-                                    <pre class="terminal-ascii">
-┌─────────────────────────────────────────────┐
-│ NETRUNNER_ID: NGUYEN.QUOC.BAO              │
-│ CLEARANCE:    ██████████ [LEVEL 9]         │
-│ STATUS:       <span class="terminal-success">[●] ONLINE</span> - AVAILABLE FOR GIGS │
-└─────────────────────────────────────────────┘
-                                    </pre>
-                                    <div class="terminal-desc">
-                                        <p class="terminal-line">Full-stack netrunner operating across distributed systems, immersive frontends, and AI-assisted automation. Specialized in resilient architectures that keep the network alive.</p>
-                                        <p class="terminal-line terminal-info">&gt; Currently jacked into: web_platforms.deploy(), ai_experiences.enhance(), zero_downtime_pipelines.maintain()</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="terminal-actions">
-                                    <a class="button terminal-btn" href="#/portfolio"><span class="terminal-prompt"></span>JACK_IN()</a>
-                                    <a class="button ghost terminal-btn" href="#/resume"><span class="terminal-prompt"></span>VIEW_LOGS()</a>
-                                </div>
-                                
-                                <div class="terminal-status">
-                                    <div class="status-row">
-                                        <span class="status-label">NODE:</span>
-                                        <span class="status-value">HO_CHI_MINH_CITY // GMT+7</span>
-                                    </div>
-                                    <div class="status-row">
-                                        <span class="status-label">LAST_CONTRACT:</span>
-                                        <span class="status-value">PORTFOLIO_SYSTEM_OVERHAUL</span>
-                                    </div>
-                                    <div class="status-row">
-                                        <span class="status-label">UPTIME:</span>
-                                        <span class="status-value terminal-success">99.8% OPERATIONAL</span>
-                                    </div>
+                <section id="home" class="factory-hero factory-section">
+                    <div class="factory-container">
+                        <div class="factory-hero-content factory-animate-fade-in-up">
+                            <h1 class="factory-hero-title">
+                                Nguyen Quoc Bao
+                            </h1>
+                            <p class="factory-hero-subtitle">
+                                Full-Stack Software Engineer
+                            </p>
+                            <p class="factory-text-large factory-text-secondary factory-mb-xl">
+                                Building scalable web applications, cloud infrastructures, and AI-powered solutions. 
+                                Specialized in modern JavaScript frameworks, distributed systems, and DevOps automation.
+                            </p>
+                            <div class="factory-hero-actions">
+                                <a href="#portfolio" class="factory-btn factory-btn-primary">
+                                    View Portfolio
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                                    </svg>
+                                </a>
+                                <a href="#resume" class="factory-btn factory-btn-secondary">
+                                    View Resume
+                                </a>
+                            </div>
+                            
+                            <div class="factory-mt-xl">
+                                <div class="factory-skills">
+                                    <span class="factory-skill-tag">React</span>
+                                    <span class="factory-skill-tag">Node.js</span>
+                                    <span class="factory-skill-tag">Python</span>
+                                    <span class="factory-skill-tag">AWS</span>
+                                    <span class="factory-skill-tag">Docker</span>
+                                    <span class="factory-skill-tag">Kubernetes</span>
+                                    <span class="factory-skill-tag">PostgreSQL</span>
+                                    <span class="factory-skill-tag">MongoDB</span>
                                 </div>
                             </div>
+                        </div>
                             
     						</div
                             
@@ -233,64 +217,88 @@
                 
 
                 <!-- PAGE : ABOUT -->
-                <section id="about" class="pt-page page-layout">
-                	<!-- .content -->
-                    <div class="content">
-                    	<!-- .layout-medium -->
-                        <div class="layout-medium">
-    					
+                <section id="about" class="factory-section factory-bg-secondary">
+                    <div class="factory-container">
+                        <div class="factory-text-center factory-mb-xl">
+                            <h2 class="factory-animate-fade-in">About Me</h2>
+                            <p class="factory-text-large factory-text-secondary">
+                                Passionate software engineer with expertise in modern web technologies
+                            </p>
+                        </div>
                         
-                        <!-- page-title -->
-                            <h1 class="page-title">
-                                <i class="pe-7s-user"></i>> cat /profile/neural.log
-                            </h1>
-                            <!-- page-title -->
-
-                            <div class="profile-terminal ascii-box" data-title="PROFILE_NEURAL_LOG">
-                                <pre class="terminal-output">
-// ──────────────────────────────────────────────────────────
-// USER PROFILE: NGUYEN.QUOC.BAO
-// ──────────────────────────────────────────────────────────
-
-LOADED MODULES:
-  ├─ <span class="terminal-success">full_stack.exe</span> .................... <span class="terminal-success">[✓]</span>
-  ├─ <span class="terminal-success">cloud_infrastructure.dll</span> ......... <span class="terminal-success">[✓]</span>
-  ├─ <span class="terminal-success">ai_assisted_automation.py</span> ........ <span class="terminal-success">[✓]</span>
-  └─ <span class="terminal-success">realtime_systems.rs</span> .............. <span class="terminal-success">[✓]</span>
-
-ACTIVE DAEMONS:
-  <span class="terminal-info">[01]</span> REACT_RENDERER_v18
-  <span class="terminal-info">[02]</span> NODE_API_SERVER_v20
-  <span class="terminal-info">[03]</span> PYTHON_ML_PIPELINE_v3
-  <span class="terminal-info">[04]</span> GO_MICROSERVICE_v1
-
-TECH_STACK:
-  Frontend  → React, Vue, Astro, WebGL
-  Backend   → Node.js, Python, Go
-  Database  → PostgreSQL, MongoDB, Redis
-  Cloud     → AWS, Docker, Kubernetes
-  AI/ML     → scikit-learn, TensorFlow, vector search
-
-SYS.LOG:
-  <span class="terminal-prompt"></span> Deploying secure, scalable experiences for teams that 
-    move fast and expect polish
-  <span class="terminal-prompt"></span> Fusing rapid prototyping with production discipline
-  <span class="terminal-prompt"></span> Mentoring junior netrunners
-  <span class="terminal-prompt"></span> Running dev_rel.sessions()
-  <span class="terminal-prompt"></span> Experimenting with audio_visuals.procedural()
-
-WORKFLOW_PROTOCOL:
-  <span class="terminal-warning">[SCAN]</span>      Break down requirements, benchmark constraints
-  <span class="terminal-info">[PROTOTYPE]</span>  Co-design flows, sprint through proofs
-  <span class="terminal-success">[DEPLOY]</span>    Build production-ready with automated coverage
-  <span class="terminal-info">[ITERATE]</span>   Monitor telemetry, ship continuous upgrades
-
-METADATA:
-  <span class="terminal-dim">├─</span> Location:     REMOTE_FIRST (multi-timezone)
-  <span class="terminal-dim">├─</span> Fuel:         third_wave_espresso + synthwave
-  <span class="terminal-dim">└─</span> Activities:   hackathon_mentor, tech_talk_host
-                                </pre>
+                        <div class="factory-grid factory-grid-2 factory-mb-xl">
+                            <div class="factory-card factory-scroll-animate">
+                                <h3>Professional Overview</h3>
+                                <p>
+                                    I'm a full-stack software engineer with over 5 years of experience building 
+                                    scalable web applications and distributed systems. I specialize in creating 
+                                    elegant solutions that balance performance, security, and user experience.
+                                </p>
+                                <p>
+                                    My expertise spans from crafting responsive front-end interfaces to designing 
+                                    robust backend architectures and implementing efficient CI/CD pipelines.
+                                </p>
                             </div>
+                            
+                            <div class="factory-card factory-scroll-animate">
+                                <h3>Technical Expertise</h3>
+                                <div class="factory-mb-md">
+                                    <h5>Frontend Development</h5>
+                                    <div class="factory-skills">
+                                        <span class="factory-skill-tag">React</span>
+                                        <span class="factory-skill-tag">Vue.js</span>
+                                        <span class="factory-skill-tag">TypeScript</span>
+                                        <span class="factory-skill-tag">Next.js</span>
+                                        <span class="factory-skill-tag">Tailwind CSS</span>
+                                    </div>
+                                </div>
+                                <div class="factory-mb-md">
+                                    <h5>Backend & Cloud</h5>
+                                    <div class="factory-skills">
+                                        <span class="factory-skill-tag">Node.js</span>
+                                        <span class="factory-skill-tag">Python</span>
+                                        <span class="factory-skill-tag">Go</span>
+                                        <span class="factory-skill-tag">AWS</span>
+                                        <span class="factory-skill-tag">Docker</span>
+                                        <span class="factory-skill-tag">Kubernetes</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5>Data & AI/ML</h5>
+                                    <div class="factory-skills">
+                                        <span class="factory-skill-tag">PostgreSQL</span>
+                                        <span class="factory-skill-tag">MongoDB</span>
+                                        <span class="factory-skill-tag">Redis</span>
+                                        <span class="factory-skill-tag">scikit-learn</span>
+                                        <span class="factory-skill-tag">TensorFlow</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="factory-card factory-scroll-animate">
+                            <h3>What I Do</h3>
+                            <div class="factory-grid factory-grid-3">
+                                <div>
+                                    <h5>🚀 Build & Scale</h5>
+                                    <p class="factory-text-small">
+                                        Develop secure, scalable applications for teams that move fast and demand excellence
+                                    </p>
+                                </div>
+                                <div>
+                                    <h5>💡 Innovate & Optimize</h5>
+                                    <p class="factory-text-small">
+                                        Fuse rapid prototyping with production-grade engineering discipline
+                                    </p>
+                                </div>
+                                <div>
+                                    <h5>🤝 Mentor & Collaborate</h5>
+                                    <p class="factory-text-small">
+                                        Guide junior developers and conduct technical workshops
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
 
                             
                         
@@ -735,6 +743,7 @@ PREFERRED_CONTACT_METHOD:
         <script src="js/jarallax.min.js"></script>
         <script src="js/jarallax-video.min.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/factory-theme.js"></script>
         
 	</body>
 <!-- InstanceEnd -->
