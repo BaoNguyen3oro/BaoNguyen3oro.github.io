@@ -30,19 +30,22 @@
     -------------------------------------------- */
 
 :root {
-	--cp-bg-primary: #05060C;
-	--cp-bg-secondary: #0b1120;
-	--cp-surface: rgba(8, 14, 30, 0.8);
-	--cp-grid-line: rgba(0, 229, 255, 0.15);
-	--cp-accent-yellow: #f8f400;
-	--cp-accent-cyan: #00e5ff;
-	--cp-accent-magenta: #ff006c;
-	--cp-accent-lime: #a6ff00;
-	--cp-text-primary: #f5faff;
-	--cp-text-muted: rgba(209, 215, 255, 0.65);
-	--cp-border-glow: rgba(255, 255, 255, 0.1);
-	--cp-card-blur: rgba(4, 9, 18, 0.75);
-	--cp-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+	/* Ultra Dark Matrix Theme */
+	--net-bg-void: #000000;
+	--net-bg-terminal: #0a0f0a;
+	--net-bg-card: rgba(10, 15, 10, 0.95);
+	--net-accent-green: #0dff0d;
+	--net-accent-amber: #ffb000;
+	--net-accent-cyan: #00d9ff;
+	--net-accent-red: #ff003c;
+	--net-text-primary: #0dff0d;
+	--net-text-dim: rgba(13, 255, 13, 0.5);
+	--net-text-bright: #00ff41;
+	--net-border: rgba(13, 255, 13, 0.4);
+	--net-border-dim: rgba(13, 255, 13, 0.2);
+	--net-scan-line: rgba(13, 255, 13, 0.08);
+	--net-shadow: 0 0 40px rgba(13, 255, 13, 0.25);
+	--net-glow: 0 0 15px rgba(13, 255, 13, 0.8);
 }
 
 /* ----- 1.1 ELEMENTS ----- */   
@@ -59,7 +62,7 @@ body {
  	position: relative; width: 100%; height: 100%;
 	}
 body {
-	 font-size: 1em; line-height: 1.7; -webkit-text-size-adjust: none; color: var(--net-text-primary); background: radial-gradient(120% 120% at 50% 0%, rgba(255, 0, 108, 0.15) 0%, transparent 50%), radial-gradient(140% 140% at 20% 30%, rgba(0, 229, 255, 0.12) 0%, transparent 50%), var(--net-bg-void);
+	 font-size: 1em; line-height: 1.7; -webkit-text-size-adjust: none; color: var(--net-text-primary); background: radial-gradient(120% 120% at 50% 0%, rgba(13, 255, 13, 0.03) 0%, transparent 70%), var(--net-bg-void);
 	 background-attachment: fixed; min-height: 100%;
 	}
 a {
@@ -2780,7 +2783,7 @@ body::before {
 	pointer-events: none;
 	z-index: 9999;
 	animation: scanline 8s linear infinite;
-	opacity: 0.5;
+	opacity: 0.3;
 }
 
 /* Terminal Noise Texture */
@@ -2962,7 +2965,7 @@ body::after {
 	margin: 0 0 1.5rem 0;
 	padding: 0;
 	overflow-x: auto;
-	text-shadow: 0 0 8px rgba(0, 255, 65, 0.5);
+	text-shadow: 0 0 12px rgba(13, 255, 13, 0.8), 0 0 20px rgba(13, 255, 13, 0.4);
 }
 
 .terminal-ascii span {
@@ -3115,7 +3118,7 @@ body::after {
 	white-space: pre-wrap;
 	word-wrap: break-word;
 	overflow-x: auto;
-	text-shadow: 0 0 5px rgba(0, 255, 65, 0.3);
+	text-shadow: 0 0 8px rgba(13, 255, 13, 0.6), 0 0 15px rgba(13, 255, 13, 0.3);
 }
 
 .terminal-output a {
@@ -3226,9 +3229,7 @@ body::after {
 
 /* Section Backgrounds for Terminal Aesthetic */
 .one-page-layout .site-main > section {
-	background: 
-		linear-gradient(180deg, rgba(0, 255, 65, 0.02) 0%, rgba(0, 255, 65, 0.05) 50%, rgba(0, 255, 65, 0.02) 100%),
-		var(--net-bg-terminal) !important;
+	background: var(--net-bg-void) !important;
 }
 
 .one-page-layout .site-main > section:before {
@@ -3310,4 +3311,188 @@ body::after {
 .neon-timeline,
 .credential-board {
 	display: none !important;
+}
+/* ============================================
+   ULTRA DARK MATRIX ENHANCEMENTS
+   ============================================ */
+
+/* Enhanced ASCII Box Styling for Dark Theme */
+.ascii-box {
+	background: rgba(0, 0, 0, 0.85) !important;
+	border: 2px solid var(--net-border) !important;
+	box-shadow: 
+		0 0 20px rgba(13, 255, 13, 0.15),
+		inset 0 0 30px rgba(13, 255, 13, 0.05) !important;
+}
+
+.ascii-box::before {
+	background: var(--net-bg-void) !important;
+	color: var(--net-text-bright) !important;
+	text-shadow: 0 0 10px rgba(13, 255, 13, 0.8);
+}
+
+/* Enhanced Hero Terminal for Dark Background */
+.hero-terminal {
+	background: rgba(0, 0, 0, 0.95) !important;
+	border: 2px solid var(--net-accent-green) !important;
+	box-shadow: 
+		0 0 50px rgba(13, 255, 13, 0.3),
+		inset 0 0 80px rgba(13, 255, 13, 0.08) !important;
+}
+
+/* Brighter Terminal Text for Dark Background */
+.terminal-output {
+	color: var(--net-text-bright);
+	text-shadow: 0 0 10px rgba(13, 255, 13, 0.5), 0 0 20px rgba(13, 255, 13, 0.2);
+}
+
+.terminal-success {
+	color: var(--net-accent-green) !important;
+	text-shadow: 0 0 12px rgba(13, 255, 13, 0.8);
+}
+
+.terminal-info {
+	color: var(--net-accent-cyan) !important;
+	text-shadow: 0 0 10px rgba(0, 217, 255, 0.6);
+}
+
+.terminal-warning {
+	color: var(--net-accent-amber) !important;
+	text-shadow: 0 0 10px rgba(255, 176, 0, 0.6);
+}
+
+.terminal-error {
+	color: var(--net-accent-red) !important;
+	text-shadow: 0 0 10px rgba(255, 0, 60, 0.6);
+}
+
+.terminal-dim {
+	color: var(--net-text-dim) !important;
+	opacity: 0.7;
+}
+
+/* Enhanced Terminal Buttons for Dark Background */
+.terminal-btn {
+	background: rgba(13, 255, 13, 0.05) !important;
+	border: 2px solid var(--net-accent-green) !important;
+	color: var(--net-accent-green) !important;
+	text-shadow: 0 0 8px rgba(13, 255, 13, 0.8);
+	box-shadow: 
+		0 0 25px rgba(13, 255, 13, 0.2),
+		inset 0 0 25px rgba(13, 255, 13, 0.05);
+}
+
+.terminal-btn:hover {
+	background: rgba(13, 255, 13, 0.15) !important;
+	border-color: var(--net-text-bright) !important;
+	box-shadow: 
+		0 0 40px rgba(13, 255, 13, 0.5),
+		inset 0 0 40px rgba(13, 255, 13, 0.1);
+	text-shadow: 0 0 12px rgba(13, 255, 13, 1);
+}
+
+/* Enhanced Terminal Links */
+.terminal-link {
+	color: var(--net-accent-cyan) !important;
+	text-shadow: 0 0 8px rgba(0, 217, 255, 0.5);
+}
+
+.terminal-link:hover {
+	color: var(--net-text-bright) !important;
+	text-shadow: 0 0 15px rgba(13, 255, 13, 1);
+}
+
+/* Enhanced Page Titles */
+.page-title {
+	color: var(--net-accent-green) !important;
+	text-shadow: 0 0 15px rgba(13, 255, 13, 0.8), 0 0 30px rgba(13, 255, 13, 0.4);
+}
+
+/* Enhanced Terminal ASCII Art */
+.terminal-ascii {
+	color: var(--net-accent-green);
+	text-shadow: 0 0 15px rgba(13, 255, 13, 0.9), 0 0 25px rgba(13, 255, 13, 0.5);
+}
+
+/* Enhanced Terminal Prompt */
+.terminal-prompt::before {
+	color: var(--net-accent-green);
+	text-shadow: 0 0 10px rgba(13, 255, 13, 0.8);
+}
+
+/* Enhanced Status Values */
+.status-value {
+	color: var(--net-text-bright);
+	text-shadow: 0 0 8px rgba(13, 255, 13, 0.6);
+}
+
+/* Enhanced Header for Dark Theme */
+.header {
+	background: rgba(0, 0, 0, 0.95) !important;
+	border-bottom: 1px solid var(--net-border-dim);
+	box-shadow: 0 0 30px rgba(13, 255, 13, 0.15);
+}
+
+.header-wrap {
+	background: rgba(0, 0, 0, 0.98) !important;
+	border-right: 1px solid var(--net-border-dim);
+}
+
+/* Enhanced Navigation */
+.nav-menu a {
+	color: var(--net-text-dim);
+}
+
+.nav-menu a:hover,
+.nav-menu .current_page_item a {
+	color: var(--net-accent-green) !important;
+	text-shadow: 0 0 12px rgba(13, 255, 13, 0.8);
+}
+
+.nav-menu a:after {
+	border-color: rgba(13, 255, 13, 0.2);
+}
+
+.nav-menu a:hover:after,
+.nav-menu .current_page_item a:after {
+	border-color: var(--net-accent-green);
+	box-shadow: 0 0 20px rgba(13, 255, 13, 0.6);
+}
+
+/* Enhanced Menu Toggle */
+.menu-toggle {
+	border-right: 2px solid var(--net-border-dim);
+}
+
+.menu-toggle:before {
+	text-shadow: 0 0 15px rgba(13, 255, 13, 0.9);
+}
+
+/* Enhanced Site Title */
+.site-title {
+	color: var(--net-accent-green) !important;
+	text-shadow: 0 0 12px rgba(13, 255, 13, 0.8);
+}
+
+/* Enhanced Contact Section Background */
+#contact.has-bg-img::before {
+	background: rgba(0, 0, 0, 0.95) !important;
+}
+
+/* CRT Effect Enhancement for Dark Theme */
+body::before {
+	background: 
+		repeating-linear-gradient(
+			0deg,
+			rgba(13, 255, 13, 0.04) 0px,
+			transparent 1px,
+			transparent 2px,
+			rgba(13, 255, 13, 0.04) 3px
+		);
+	opacity: 0.25 !important;
+}
+
+/* Terminal Noise Enhancement */
+body::after {
+	opacity: 0.15 !important;
 }
