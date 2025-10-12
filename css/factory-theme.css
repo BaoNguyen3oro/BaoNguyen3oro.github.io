@@ -755,7 +755,145 @@ a:hover {
 }
 
 /* ============================================
-   15. OVERRIDE EXISTING STYLES
+   15. RESUME SECTION STYLES
+   ============================================ */
+.factory-resume-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--factory-space-lg);
+  gap: var(--factory-space-md);
+}
+
+.factory-resume-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: var(--factory-space-xs);
+}
+
+.factory-resume-company {
+  color: var(--factory-text-secondary);
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+.factory-resume-date {
+  color: var(--factory-text-tertiary);
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.factory-resume-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.factory-resume-list li {
+  padding-left: 1.5rem;
+  margin-bottom: var(--factory-space-sm);
+  position: relative;
+  color: var(--factory-text-secondary);
+}
+
+.factory-resume-list li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--factory-accent-blue);
+  font-weight: 600;
+}
+
+.factory-mb-2xl {
+  margin-bottom: var(--factory-space-3xl);
+}
+
+/* ============================================
+   16. BLOG SECTION STYLES
+   ============================================ */
+.factory-blog-date {
+  color: var(--factory-text-tertiary);
+  font-size: 0.85rem;
+  margin-bottom: var(--factory-space-sm);
+  font-weight: 500;
+}
+
+/* ============================================
+   17. CONTACT SECTION STYLES
+   ============================================ */
+.factory-contact-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto var(--factory-space-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--factory-bg-primary);
+  border-radius: var(--factory-radius-lg);
+  color: var(--factory-accent-blue);
+}
+
+.factory-availability-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--factory-space-xs);
+  padding: var(--factory-space-sm) var(--factory-space-lg);
+  background: var(--factory-bg-tertiary);
+  border-radius: var(--factory-radius-full);
+  font-weight: 500;
+}
+
+.factory-status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--factory-accent-green);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.factory-specialization-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.factory-specialization-list li {
+  padding-left: 1.5rem;
+  margin-bottom: var(--factory-space-sm);
+  position: relative;
+  color: var(--factory-text-secondary);
+}
+
+.factory-specialization-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--factory-accent-green);
+  font-weight: 600;
+}
+
+/* ============================================
+   18. MOBILE MENU TOGGLE
+   ============================================ */
+.factory-menu-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .factory-menu-toggle {
+    display: block;
+  }
+}
+
+/* ============================================
+   19. OVERRIDE EXISTING STYLES
    ============================================ */
 /* Remove all Matrix/Cyberpunk styling */
 .terminal-boot,
@@ -777,7 +915,11 @@ a:hover {
 .contracts-terminal,
 .archive-terminal,
 .broadcast-terminal,
-.comms-terminal {
+.comms-terminal,
+.terminal-info,
+.terminal-warning,
+.terminal-dim,
+.cursor-blink {
   display: none !important;
 }
 
@@ -788,6 +930,7 @@ a:hover {
 
 .site-main {
   background: transparent !important;
+  padding-top: 80px; /* Add space for fixed header */
 }
 
 .header {
@@ -805,9 +948,21 @@ a {
 /* Clean backgrounds */
 .pt-page,
 .page-layout {
-  background: var(--factory-bg-primary) !important;
+  background: transparent !important;
 }
 
 .light-text {
   color: var(--factory-text-primary) !important;
+}
+
+/* Hide old page titles */
+.page-title {
+  display: none !important;
+}
+
+/* ============================================
+   20. SMOOTH SCROLL OFFSET
+   ============================================ */
+section[id] {
+  scroll-margin-top: 80px;
 }
