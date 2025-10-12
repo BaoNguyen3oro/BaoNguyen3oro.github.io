@@ -683,9 +683,19 @@ body {
 .home-section h4 {
 	font-weight: 400; letter-spacing: -1px; margin-top: 1em !important;
 	}
-.home-section .button { 
-	margin-top: 3em; 
-	}  
+.hero-actions {
+	display: flex; flex-wrap: wrap; justify-content: center; gap: 1.2em; margin-top: 3em;
+	}
+.hero-actions .button {
+	margin-top: 0;
+	}
+a.button.ghost {
+	background: transparent; border: 2px solid rgba(255, 255, 255, 0.7); color: rgba(255, 255, 255, 0.9);
+	}
+a.button.ghost:hover,
+a.button.ghost:focus {
+	background: rgba(255, 255, 255, 0.15); color: #fff;
+	}
 
 /* PAGE BACKGROUNDS */
 .one-page-layout .site-main > section:nth-of-type(1) { 
@@ -831,7 +841,7 @@ body {
 
 /* PROCESS */
 .process { 
-	position: relative; text-align: center; width: 80px; height: 80px; padding: 16px 10px; margin: 0 auto 1.6em; border-radius: 0 14px 14px 14px; color: #345; background: #fff;
+	position: relative; text-align: center; width: 140px; min-height: 140px; padding: 20px 16px; margin: 0 auto 1.6em; border-radius: 0 14px 14px 14px; color: #345; background: #fff; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; gap: .6em;
 	}
 .process:after { 
 	content: ""; position:absolute; top: 50%; left: 100%; width: 120%; height: 0; border-bottom: 3px dashed #fff;
@@ -843,7 +853,10 @@ body {
 	max-width: 60%; margin: 0;
 	}
 .process h4 { 
-	margin: 0; font-size: 10px;
+	margin: 0; font-size: 12px; text-transform: uppercase;
+	}
+.process p {
+	margin: 0; font-size: 12px; line-height: 1.4; color: rgba(28, 38, 43, 0.6); text-transform: none;
 	}
 .row [class^="col-"]:nth-child(3n) .process:after { 
     display: none; 
@@ -864,6 +877,13 @@ body {
 		}
 	.fun-fact h4 { 
 		max-width: 140px; margin: 0 auto; font-size: 12px; line-height: 1.2; font-weight: 400; text-transform: uppercase; 
+		}
+	.fun-fact h4 a {
+		color: inherit; text-transform: none; display: inline-block;
+		}
+	.fun-fact h4 a:hover,
+	.fun-fact h4 a:focus {
+		text-decoration: underline;
 		}
 
 /* CLIENT */
@@ -920,6 +940,12 @@ body {
 		}
 	.event p {
 		margin: .6em 0 .2em 0; font-size: 15px;
+		}
+	.event ul {
+		margin: .6em 0 .2em 0; padding-left: 1.4em;
+		}
+	.event ul li {
+		margin-bottom: .4em; font-size: 15px; line-height: 1.5;
 		}
     .event p:last-child {
 		margin-bottom: 0;
