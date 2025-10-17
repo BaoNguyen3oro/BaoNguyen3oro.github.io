@@ -116,8 +116,8 @@ var mapCanvas;
 		
 		
 		// ------------------------------
-		// SETUP
-		setup();
+		// SETUP - DISABLED for Factory theme
+		// setup();
 		// ------------------------------
 		
 		

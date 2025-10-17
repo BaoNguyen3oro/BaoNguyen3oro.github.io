@@ -37,8 +37,9 @@
         <link rel="stylesheet" type="text/css" href="css/animations.css">
         <link rel="stylesheet" type="text/css" href="css/align.css">
         <link rel="stylesheet" type="text/css" href="css/main.css">
-        <link rel="stylesheet" type="text/css" href="css/factory-theme.css">
         <link rel="stylesheet" type="text/css" href="css/768.css">
+        <!-- Factory theme MUST load last to override all other styles -->
+        <link rel="stylesheet" type="text/css" href="css/factory-theme.css">
         
         <!-- INITIAL SCRIPTS -->
 		<script src="js/jquery-1.12.1.min.js"></script>
@@ -50,6 +51,48 @@
                 
 		<!-- InstanceBeginEditable name="head" -->
     <!-- InstanceEndEditable -->
+        
+        <!-- EMERGENCY CSS: Force content visibility with highest specificity -->
+        <style>
+            /* Ultra-high specificity overrides to ensure content displays */
+            html body #page.hfeed.site {
+                display: block !important;
+                visibility: visible !important;
+                overflow: visible !important;
+            }
+            
+            html body #page #main.site-main {
+                display: block !important;
+                visibility: visible !important;
+                opacity: 1 !important;
+                position: static !important;
+                overflow: visible !important;
+                height: auto !important;
+                padding-top: 80px !important;
+                transform: none !important;
+            }
+            
+            html body #page #main section {
+                display: block !important;
+                visibility: visible !important;
+                opacity: 1 !important;
+                position: relative !important;
+                transform: none !important;
+            }
+            
+            /* Override modern-layout hiding */
+            html.modern-layout body #page #main.site-main {
+                position: static !important;
+                overflow: visible !important;
+                perspective: none !important;
+            }
+            
+            html.modern-layout body #page #main section {
+                visibility: visible !important;
+                display: block !important;
+                opacity: 1 !important;
+            }
+        </style>
         
 	</head>
     

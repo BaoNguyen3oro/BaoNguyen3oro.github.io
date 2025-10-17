@@ -990,3 +990,90 @@ a {
 section[id] {
   scroll-margin-top: 80px;
 }
+
+/* ============================================
+   21. CRITICAL OVERRIDES - FORCE CONTENT VISIBILITY
+   ============================================ */
+/* These rules MUST override all old theme CSS */
+
+/* Force main container to be visible and positioned correctly */
+#page,
+.site,
+.hfeed {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  position: relative !important;
+  overflow: visible !important;
+  height: auto !important;
+  min-height: 100vh !important;
+}
+
+/* Force site-main to display properly */
+.site-main,
+#main {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  position: static !important;
+  overflow: visible !important;
+  height: auto !important;
+  padding-top: 80px !important;
+  transform: none !important;
+  perspective: none !important;
+}
+
+/* Force ALL sections to be visible */
+section,
+.factory-section,
+.factory-hero,
+section[id] {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  position: relative !important;
+  transform: none !important;
+  backface-visibility: visible !important;
+}
+
+/* Override any page-current or pt-page hiding */
+.pt-page,
+.page-layout,
+.page-current {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  position: static !important;
+  transform: none !important;
+}
+
+/* Disable modern-layout and classic-layout hiding behaviors */
+.modern-layout .site-main,
+.classic-layout .site-main,
+.modern-layout #main,
+.classic-layout #main {
+  position: static !important;
+  overflow: visible !important;
+  perspective: none !important;
+  height: auto !important;
+}
+
+.modern-layout .pt-page,
+.classic-layout .pt-page,
+.modern-layout section,
+.classic-layout section {
+  visibility: visible !important;
+  display: block !important;
+  opacity: 1 !important;
+  position: relative !important;
+  transform: none !important;
+}
+
+/* Force content containers to be visible */
+.factory-container,
+.content,
+.layout-medium {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
