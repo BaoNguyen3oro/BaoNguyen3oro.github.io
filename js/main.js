@@ -19,8 +19,8 @@ var mapCanvas;
 		
 		
 		// ------------------------------
-		// start loader
-		showLoader();
+		// start loader - DISABLED for Factory theme
+		hideLoader();
 		// ------------------------------
 		
 		
@@ -58,8 +58,9 @@ var mapCanvas;
 		
 					
 		// ------------------------------
-		// ONE PAGE LAYOUT FUNCTIONS
-		if($('html').hasClass('one-page-layout')) {
+		// ONE PAGE LAYOUT FUNCTIONS - DISABLED FOR FACTORY THEME
+		// Skip page transition system to allow Factory theme to work properly
+		if(false && $('html').hasClass('one-page-layout')) {
 			
 			// ------------------------------
 			// PORTFOLIO DETAILS
@@ -615,7 +616,7 @@ var mapCanvas;
 	
 	function showProjectDetails(url) {
 		
-		showLoader();
+		// showLoader(); // DISABLED for Factory theme
 		
 		var p = $('.p-overlay:not(.active)').first();
 		pActive = $('.p-overlay.active');

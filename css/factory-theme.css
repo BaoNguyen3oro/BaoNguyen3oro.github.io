@@ -895,6 +895,30 @@ a:hover {
 /* ============================================
    19. OVERRIDE EXISTING STYLES
    ============================================ */
+
+/* Ensure all content is visible */
+.factory-theme .site-main,
+.factory-theme .page-layout,
+.factory-theme .pt-page {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  position: static !important;
+  transform: none !important;
+}
+
+/* Reset any old theme positioning */
+.factory-theme #page {
+  position: relative !important;
+  overflow: visible !important;
+}
+
+/* Ensure sections are visible */
+.factory-theme section {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
 /* Remove all Matrix/Cyberpunk styling */
 .terminal-boot,
 .terminal-line,
