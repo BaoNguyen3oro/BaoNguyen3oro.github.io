@@ -1,886 +1,584 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js factory-theme"><!-- InstanceBegin template="/Templates/layout.dwt" codeOutsideHTMLIsLocked="false" -->
-	
-    
-
+<html lang="en" class="factory-theme">
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+    <meta name="description" content="Nguyen Quoc Bao - Full-Stack Software Engineer specializing in modern web applications, cloud infrastructure, and AI/ML solutions.">
+    <meta name="keywords" content="Nguyen Quoc Bao, software engineer, full-stack developer, React, Node.js, Python, AWS, Docker, Kubernetes">
+    <meta name="author" content="Nguyen Quoc Bao">
+    <meta property="og:title" content="Nguyen Quoc Bao | Full-Stack Software Engineer">
+    <meta property="og:description" content="Full-Stack Software Engineer specializing in modern web applications, cloud infrastructure, and AI/ML solutions.">
+    <meta property="og:image" content="images/site/resize_nqb.jpg">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
     
-		<meta charset="utf-8" />
-        <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
-        <meta name="description" content="Nguyen Quoc Bao - Full-Stack Software Engineer specializing in modern web applications, cloud infrastructure, and AI/ML solutions. Building scalable, secure systems with React, Node.js, Python, AWS, and Kubernetes.">
-        <meta name="keywords" content="Nguyen Quoc Bao, software engineer, full-stack developer, React, Node.js, Python, AWS, Docker, Kubernetes, web development">
-        <meta name="author" content="Nguyen Quoc Bao">
-        <meta property="og:title" content="Nguyen Quoc Bao | Full-Stack Software Engineer">
-        <meta property="og:description" content="Full-Stack Software Engineer specializing in modern web applications, cloud infrastructure, and AI/ML solutions.">
-        <meta property="og:image" content="images/site/resize_nqb.jpg">
-        <meta property="og:type" content="website">
-        <meta name="twitter:card" content="summary_large_image">
+    <title>Nguyen Quoc Bao | Full-Stack Software Engineer</title>
+    
+    <link rel="shortcut icon" href="images/ico/web_03l_icon.ico">
+    <link rel="apple-touch-icon" href="images/ico/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/factory-theme.css">
+</head>
 
-        <title>Nguyen Quoc Bao | Full-Stack Software Engineer</title>
+<body>
+    <div id="page" class="hfeed site">
+        <header id="masthead" class="factory-header" role="banner">
+            <div class="factory-container">
+                <nav class="factory-nav">
+                    <a href="#home" class="factory-logo">NQB PORTFOLIO</a>
+                    
+                    <button class="factory-menu-toggle" aria-label="Toggle menu">
+                        <span class="factory-menu-icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </button>
+                    
+                    <ul class="factory-nav-menu">
+                        <li><a href="#home" class="factory-nav-link">Home</a></li>
+                        <li><a href="#about" class="factory-nav-link">About</a></li>
+                        <li><a href="#resume" class="factory-nav-link">Resume</a></li>
+                        <li><a href="#portfolio" class="factory-nav-link">Portfolio</a></li>
+                        <li><a href="#blog" class="factory-nav-link">Blog</a></li>
+                        <li><a href="#contact" class="factory-nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-        <!-- FAV and TOUCH ICONS -->
-        <link rel="shortcut icon" href="images/ico/web_03l_icon.ico">
-        <link rel="apple-touch-icon" href="images/ico/apple-touch-icon.png"/>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		 
-        <!-- FONTS -->
-        <link href='https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap' rel='stylesheet' type='text/css'>
-            
-        <!-- STYLES -->
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="css/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
-        <link rel="stylesheet" type="text/css" href="css/fonts/fontello/css/fontello.css">
-        <link rel="stylesheet" type="text/css" href="js/nprogress/nprogress.css">
-        <link rel="stylesheet" type="text/css" href="js/jquery.magnific-popup/magnific-popup.css">
-        <link rel="stylesheet" type="text/css" href="js/jquery.uniform/uniform.default.css">
-        <link rel="stylesheet" type="text/css" href="css/animations.css">
-        <link rel="stylesheet" type="text/css" href="css/align.css">
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-        <link rel="stylesheet" type="text/css" href="css/768.css">
-        <!-- Factory theme MUST load last to override all other styles -->
-        <link rel="stylesheet" type="text/css" href="css/factory-theme.css">
-        
-        <!-- INITIAL SCRIPTS -->
-		<script src="js/jquery-1.12.1.min.js"></script>
-        <script src="js/jquery-migrate-1.2.1.min.js"></script>
-        <script src="js/modernizr.min.js"></script>
-        <!--[if lt IE 9]>
-            <script src="js/ie.js"></script>
-        <![endif]-->
-                
-		<!-- InstanceBeginEditable name="head" -->
-    <!-- InstanceEndEditable -->
-        
-        <!-- EMERGENCY CSS: Force content visibility with highest specificity -->
-        <style>
-            /* Ultra-high specificity overrides to ensure content displays */
-            html body #page.hfeed.site {
-                display: block !important;
-                visibility: visible !important;
-                overflow: visible !important;
-            }
-            
-            html body #page #main.site-main {
-                display: block !important;
-                visibility: visible !important;
-                opacity: 1 !important;
-                position: static !important;
-                overflow: visible !important;
-                height: auto !important;
-                padding-top: 80px !important;
-                transform: none !important;
-            }
-            
-            html body #page #main section {
-                display: block !important;
-                visibility: visible !important;
-                opacity: 1 !important;
-                position: relative !important;
-                transform: none !important;
-            }
-            
-            /* Override modern-layout hiding */
-            html.modern-layout body #page #main.site-main {
-                position: static !important;
-                overflow: visible !important;
-                perspective: none !important;
-            }
-            
-            html.modern-layout body #page #main section {
-                visibility: visible !important;
-                display: block !important;
-                opacity: 1 !important;
-            }
-        </style>
-        
-	</head>
-    
-    
-    
-	<body>
-    	
-        
-        
-        
-        <!-- PAGE -->
-		<div id="page" class="hfeed site">
-			
-            
-            
-            <!-- HEADER -->
-            <header id="masthead" class="factory-header" role="banner">
+        <div id="main" class="site-main">
+            <section id="home" class="factory-hero factory-section">
                 <div class="factory-container">
-                    <nav class="factory-nav">
-                        <a href="#home" class="factory-logo">NQB</a>
-                        
-                        <button class="factory-menu-toggle" aria-label="Toggle menu">
-                            <span class="factory-menu-icon">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </span>
-                        </button>
-                        
-                        <ul class="factory-nav-menu">
-                            <li><a href="#home" class="factory-nav-link">Home</a></li>
-                            <li><a href="#about" class="factory-nav-link">About</a></li>
-                            <li><a href="#resume" class="factory-nav-link">Resume</a></li>
-                            <li><a href="#portfolio" class="factory-nav-link">Portfolio</a></li>
-                            <li><a href="#blog" class="factory-nav-link">Blog</a></li>
-                            <li><a href="#contact" class="factory-nav-link">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </header>
-            <!-- HEADER -->
-            
-            <!-- OLD HEADER - HIDDEN -->
-            <div style="display: none;">
-                <header class="header">
-                    <a class="menu-toggle toggle-link"></a>
-                    <h1 class="site-title mobile-title">NGUYEN QUOC BAO</h1>
-                    <div class="header-wrap">
-                        <img src="images/site/resize_nqb.jpg" alt="Portrait of Nguyen Quoc Bao" loading="lazy">
-                        <h1 class="site-title">NGUYEN QUOC BAO</h1>
-                        <nav id="primary-navigation" class="site-navigation primary-navigation" role="navigation" aria-label="Primary">
-                            <div class="nav-menu">
-                                <ul>
-                                    <li><a href="#/home"><i class="pe-7s-home"></i>Home</a></li>
-                                    <li><a href="#/about"><i class="pe-7s-user"></i>About Me</a></li>
-                                    <li><a href="#/resume"><i class="pe-7s-id"></i>Resume</a></li>
-                                    <li><a href="#/portfolio"><i class="pe-7s-glasses"></i>Portfolio</a></li>
-                                    <li><a href="#/blog"><i class="pe-7s-notebook"></i>Blog</a></li>
-                                    <li><a href="#/contact"><i class="pe-7s-call"></i>Contact</a></li>
-                                </ul>
-                            </div>
-                        </nav>
-                    
-                    
-                    
-                    <!-- SEARCH --> 
-                    <div class="header-search">
-                        <form role="search" method="get" id="search-form" action="#">
-                          <input type="text" value="" name="s" id="search" placeholder="search terminal...">
-                          <input type="submit" id="search-submit" title="Search" value="→">
-                        </form>
-                    </div>
-                    <!-- SEARCH -->
-                    
-                    <!-- header-bottom -->
-                    <div class="header-bottom">
-                    
-                        <!-- SOCIAL -->
-                        <ul class="social">
-                            <li>
-                                <a class="github" href="https://github.com/BaoNguyen3oro" target="_blank" rel="noopener" aria-label="GitHub"></a>
-                            </li>
-                            <li>
-                                <a class="facebook" href="https://www.facebook.com/HaveAGreateDayWhenUSeeMe" target="_blank" rel="noopener" aria-label="Facebook"></a>
-                            </li>
-                        </ul>
-                        <!-- SOCIAL -->
-                    	
-                        <!-- copy-text -->
-                        <div class="copy-text">
-                        	<p>&copy; 2025 Nguyen Quoc Bao</p>
+                    <div class="factory-hero-content factory-animate-fade-in-up">
+                        <div class="factory-kicker">Full-Stack Engineer</div>
+                        <h1 class="factory-hero-title">Nguyen Quoc Bao</h1>
+                        <p class="factory-hero-subtitle">
+                            Building scalable web applications, cloud infrastructures, and AI-powered solutions
+                        </p>
+                        <p class="factory-text-large factory-text-secondary factory-mb-xl">
+                            Specialized in modern JavaScript frameworks, distributed systems, and DevOps automation
+                        </p>
+                        <div class="factory-hero-actions">
+                            <a href="#portfolio" class="factory-btn factory-btn-primary">
+                                View Portfolio
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                            <a href="#resume" class="factory-btn factory-btn-secondary">View Resume</a>
                         </div>
-                        <!-- copy-text -->
                         
-                    </div>
-                    <!-- header-bottom -->
-                    
-                    
-                </div>
-                <!-- header-wrap -->
-                
-			</header>
-            <!-- HEADER -->
-            
-            <!-- .site-main -->
-		  <div id="main" class="site-main">
-            
-            
-            
-				<!-- InstanceBeginEditable name="Page-Content" -->
-				
-                
-               	
-                <!-- PAGE : HOME -->
-                <section id="home" class="factory-hero factory-section">
-                    <div class="factory-container">
-                        <div class="factory-hero-content factory-animate-fade-in-up">
-                            <h1 class="factory-hero-title">
-                                Nguyen Quoc Bao
-                            </h1>
-                            <p class="factory-hero-subtitle">
-                                Full-Stack Software Engineer
-                            </p>
-                            <p class="factory-text-large factory-text-secondary factory-mb-xl">
-                                Building scalable web applications, cloud infrastructures, and AI-powered solutions. 
-                                Specialized in modern JavaScript frameworks, distributed systems, and DevOps automation.
-                            </p>
-                            <div class="factory-hero-actions">
-                                <a href="#portfolio" class="factory-btn factory-btn-primary">
-                                    View Portfolio
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M5 12h14M12 5l7 7-7 7"/>
-                                    </svg>
-                                </a>
-                                <a href="#resume" class="factory-btn factory-btn-secondary">
-                                    View Resume
-                                </a>
+                        <div class="factory-mt-xl">
+                            <div class="factory-skills">
+                                <span class="factory-skill-tag">React</span>
+                                <span class="factory-skill-tag">Node.js</span>
+                                <span class="factory-skill-tag">Python</span>
+                                <span class="factory-skill-tag">AWS</span>
+                                <span class="factory-skill-tag">Docker</span>
+                                <span class="factory-skill-tag">Kubernetes</span>
+                                <span class="factory-skill-tag">PostgreSQL</span>
+                                <span class="factory-skill-tag">MongoDB</span>
                             </div>
-                            
-                            <div class="factory-mt-xl">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="factory-section factory-bg-secondary">
+                <div class="factory-container">
+                    <div class="factory-text-center factory-mb-xl">
+                        <h2 class="factory-animate-fade-in">About Me</h2>
+                        <p class="factory-text-large factory-text-secondary">
+                            Passionate software engineer with expertise in modern web technologies
+                        </p>
+                    </div>
+                    
+                    <div class="factory-grid factory-grid-2 factory-mb-xl">
+                        <div class="factory-card factory-scroll-animate">
+                            <h3>Professional Overview</h3>
+                            <p>
+                                I'm a full-stack software engineer with over 5 years of experience building 
+                                scalable web applications and distributed systems. I specialize in creating 
+                                elegant solutions that balance performance, security, and user experience.
+                            </p>
+                            <p>
+                                My expertise spans from crafting responsive front-end interfaces to designing 
+                                robust backend architectures and implementing efficient CI/CD pipelines.
+                            </p>
+                        </div>
+                        
+                        <div class="factory-card factory-scroll-animate">
+                            <h3>Technical Expertise</h3>
+                            <div class="factory-mb-md">
+                                <h5>Frontend Development</h5>
                                 <div class="factory-skills">
                                     <span class="factory-skill-tag">React</span>
+                                    <span class="factory-skill-tag">Vue.js</span>
+                                    <span class="factory-skill-tag">TypeScript</span>
+                                    <span class="factory-skill-tag">Next.js</span>
+                                    <span class="factory-skill-tag">Tailwind CSS</span>
+                                </div>
+                            </div>
+                            <div class="factory-mb-md">
+                                <h5>Backend & Cloud</h5>
+                                <div class="factory-skills">
                                     <span class="factory-skill-tag">Node.js</span>
                                     <span class="factory-skill-tag">Python</span>
+                                    <span class="factory-skill-tag">Go</span>
                                     <span class="factory-skill-tag">AWS</span>
                                     <span class="factory-skill-tag">Docker</span>
                                     <span class="factory-skill-tag">Kubernetes</span>
+                                </div>
+                            </div>
+                            <div>
+                                <h5>Data & AI/ML</h5>
+                                <div class="factory-skills">
                                     <span class="factory-skill-tag">PostgreSQL</span>
                                     <span class="factory-skill-tag">MongoDB</span>
+                                    <span class="factory-skill-tag">Redis</span>
+                                    <span class="factory-skill-tag">scikit-learn</span>
+                                    <span class="factory-skill-tag">TensorFlow</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </section>
-                <!-- PAGE : HOME -->
-                
-                
-                
-                
+                    
+                    <div class="factory-card factory-scroll-animate">
+                        <h3>What I Do</h3>
+                        <div class="factory-grid factory-grid-3">
+                            <div>
+                                <h5>🚀 Build & Scale</h5>
+                                <p class="factory-text-small">
+                                    Develop secure, scalable applications for teams that move fast and demand excellence
+                                </p>
+                            </div>
+                            <div>
+                                <h5>💡 Innovate & Optimize</h5>
+                                <p class="factory-text-small">
+                                    Fuse rapid prototyping with production-grade engineering discipline
+                                </p>
+                            </div>
+                            <div>
+                                <h5>🤝 Mentor & Collaborate</h5>
+                                <p class="factory-text-small">
+                                    Guide junior developers and conduct technical workshops
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-                <!-- PAGE : ABOUT -->
-                <section id="about" class="factory-section factory-bg-secondary">
-                    <div class="factory-container">
-                        <div class="factory-text-center factory-mb-xl">
-                            <h2 class="factory-animate-fade-in">About Me</h2>
-                            <p class="factory-text-large factory-text-secondary">
-                                Passionate software engineer with expertise in modern web technologies
-                            </p>
+            <section id="resume" class="factory-section">
+                <div class="factory-container">
+                    <div class="factory-text-center factory-mb-xl">
+                        <h2 class="factory-animate-fade-in">Experience & Education</h2>
+                        <p class="factory-text-large factory-text-secondary">
+                            My professional journey and academic background
+                        </p>
+                    </div>
+                    
+                    <div class="factory-mb-2xl">
+                        <h3 class="factory-mb-lg">Professional Experience</h3>
+                        
+                        <div class="factory-card factory-scroll-animate factory-mb-lg">
+                            <div class="factory-resume-header">
+                                <div>
+                                    <h4 class="factory-resume-title">Software Engineer</h4>
+                                    <p class="factory-resume-company">Ton Duc Thang University</p>
+                                </div>
+                                <span class="factory-resume-date">2019 - Present</span>
+                            </div>
+                            <ul class="factory-resume-list">
+                                <li>Architected hotel and cinema management platforms serving thousands of bookings per quarter</li>
+                                <li>Deployed ML-assisted Q&A pipelines with scikit-learn, reducing support queues by 40%</li>
+                                <li>Conducted weekly tech talks and pair programming sessions to mentor junior developers</li>
+                            </ul>
                         </div>
                         
-                        <div class="factory-grid factory-grid-2 factory-mb-xl">
+                        <div class="factory-card factory-scroll-animate">
+                            <div class="factory-resume-header">
+                                <div>
+                                    <h4 class="factory-resume-title">Software Development Intern</h4>
+                                    <p class="factory-resume-company">TMA Solutions</p>
+                                </div>
+                                <span class="factory-resume-date">May 2019 - Sep 2019</span>
+                            </div>
+                            <ul class="factory-resume-list">
+                                <li>Customized Dynamics NAV ERP modules for finance and logistics workflows</li>
+                                <li>Partnered with PM/QA on sprint rituals and prioritized high-impact deliverables</li>
+                                <li>Shipped production-ready features with documentation, demo scripts, and automated tests</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="factory-mb-2xl">
+                        <h3 class="factory-mb-lg">Education</h3>
+                        
+                        <div class="factory-card factory-scroll-animate">
+                            <div class="factory-resume-header">
+                                <div>
+                                    <h4 class="factory-resume-title">Bachelor of Software Engineering</h4>
+                                    <p class="factory-resume-company">Ton Duc Thang University</p>
+                                </div>
+                                <span class="factory-resume-date">2016 - 2020</span>
+                            </div>
+                            <p class="factory-text-secondary factory-mb-md">
+                                <strong>Status:</strong> Graduated with Honors
+                            </p>
+                            <div class="factory-mb-md">
+                                <strong>Specializations:</strong>
+                                <ul class="factory-resume-list">
+                                    <li>Distributed Systems Architecture</li>
+                                    <li>Applied AI & Machine Learning</li>
+                                    <li>Human-Computer Interaction</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <strong>Activities:</strong>
+                                <ul class="factory-resume-list">
+                                    <li>Led peer tutoring groups for algorithms and web engineering</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="factory-mb-lg">Certifications</h3>
+                        
+                        <div class="factory-grid factory-grid-3">
                             <div class="factory-card factory-scroll-animate">
-                                <h3>Professional Overview</h3>
-                                <p>
-                                    I'm a full-stack software engineer with over 5 years of experience building 
-                                    scalable web applications and distributed systems. I specialize in creating 
-                                    elegant solutions that balance performance, security, and user experience.
-                                </p>
-                                <p>
-                                    My expertise spans from crafting responsive front-end interfaces to designing 
-                                    robust backend architectures and implementing efficient CI/CD pipelines.
-                                </p>
+                                <h5>CAIT TDTU</h5>
+                                <p class="factory-text-small factory-text-secondary">Certificate of Appreciation</p>
+                                <p class="factory-text-small factory-text-tertiary">2017 - 2019</p>
                             </div>
                             
                             <div class="factory-card factory-scroll-animate">
-                                <h3>Technical Expertise</h3>
-                                <div class="factory-mb-md">
-                                    <h5>Frontend Development</h5>
-                                    <div class="factory-skills">
-                                        <span class="factory-skill-tag">React</span>
-                                        <span class="factory-skill-tag">Vue.js</span>
-                                        <span class="factory-skill-tag">TypeScript</span>
-                                        <span class="factory-skill-tag">Next.js</span>
-                                        <span class="factory-skill-tag">Tailwind CSS</span>
-                                    </div>
+                                <h5>FPT Software</h5>
+                                <p class="factory-text-small factory-text-secondary">RPA Bootcamp Graduate</p>
+                                <p class="factory-text-small factory-text-tertiary">2019</p>
+                            </div>
+                            
+                            <div class="factory-card factory-scroll-animate">
+                                <h5>TMA Solutions</h5>
+                                <p class="factory-text-small factory-text-secondary">Internship Transcript</p>
+                                <p class="factory-text-small factory-text-tertiary">2019</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="factory-text-center factory-mt-xl">
+                        <a href="mailto:kanbo123@gmail.com?subject=Resume%20Request" class="factory-btn factory-btn-primary">
+                            Request Full Resume
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="portfolio" class="factory-section factory-bg-secondary">
+                <div class="factory-container">
+                    <div class="factory-text-center factory-mb-xl">
+                        <h2 class="factory-animate-fade-in">Featured Projects</h2>
+                        <p class="factory-text-large factory-text-secondary">
+                            A selection of my recent work and contributions
+                        </p>
+                    </div>
+                    
+                    <div class="factory-grid factory-grid-3">
+                        <div class="factory-card factory-scroll-animate">
+                            <div class="factory-portfolio-content">
+                                <h4 class="factory-portfolio-title">Hotel Management System</h4>
+                                <p class="factory-text-secondary factory-text-small factory-mb-md">
+                                    Full-stack hotel management system with real-time booking and analytics dashboard
+                                </p>
+                                <div class="factory-portfolio-tech">
+                                    <span class="factory-tech-badge">React</span>
+                                    <span class="factory-tech-badge">Node.js</span>
+                                    <span class="factory-tech-badge">PostgreSQL</span>
                                 </div>
-                                <div class="factory-mb-md">
-                                    <h5>Backend & Cloud</h5>
-                                    <div class="factory-skills">
-                                        <span class="factory-skill-tag">Node.js</span>
-                                        <span class="factory-skill-tag">Python</span>
-                                        <span class="factory-skill-tag">Go</span>
-                                        <span class="factory-skill-tag">AWS</span>
-                                        <span class="factory-skill-tag">Docker</span>
-                                        <span class="factory-skill-tag">Kubernetes</span>
-                                    </div>
-                                </div>
-                                <div>
-                                    <h5>Data & AI/ML</h5>
-                                    <div class="factory-skills">
-                                        <span class="factory-skill-tag">PostgreSQL</span>
-                                        <span class="factory-skill-tag">MongoDB</span>
-                                        <span class="factory-skill-tag">Redis</span>
-                                        <span class="factory-skill-tag">scikit-learn</span>
-                                        <span class="factory-skill-tag">TensorFlow</span>
-                                    </div>
+                                <div class="factory-mt-md">
+                                    <a href="https://github.com/BaoNguyen3oro/hotel-management-system" target="_blank" class="factory-btn factory-btn-ghost factory-text-small">
+                                        View Project →
+                                    </a>
                                 </div>
                             </div>
                         </div>
                         
                         <div class="factory-card factory-scroll-animate">
-                            <h3>What I Do</h3>
-                            <div class="factory-grid factory-grid-3">
-                                <div>
-                                    <h5>🚀 Build & Scale</h5>
-                                    <p class="factory-text-small">
-                                        Develop secure, scalable applications for teams that move fast and demand excellence
-                                    </p>
-                                </div>
-                                <div>
-                                    <h5>💡 Innovate & Optimize</h5>
-                                    <p class="factory-text-small">
-                                        Fuse rapid prototyping with production-grade engineering discipline
-                                    </p>
-                                </div>
-                                <div>
-                                    <h5>🤝 Mentor & Collaborate</h5>
-                                    <p class="factory-text-small">
-                                        Guide junior developers and conduct technical workshops
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- PAGE : ABOUT -->
-    
-    
-    
-    
-    
-                <!-- PAGE : RESUME -->
-                <section id="resume" class="factory-section">
-                    <div class="factory-container">
-                        <div class="factory-text-center factory-mb-xl">
-                            <h2 class="factory-animate-fade-in">Experience & Education</h2>
-                            <p class="factory-text-large factory-text-secondary">
-                                My professional journey and academic background
-                            </p>
-                        </div>
-                        
-                        <!-- Experience Timeline -->
-                        <div class="factory-mb-2xl">
-                            <h3 class="factory-mb-lg">Professional Experience</h3>
-                            
-                            <div class="factory-card factory-scroll-animate factory-mb-lg">
-                                <div class="factory-resume-header">
-                                    <div>
-                                        <h4 class="factory-resume-title">Software Engineer</h4>
-                                        <p class="factory-resume-company">Ton Duc Thang University</p>
-                                    </div>
-                                    <span class="factory-resume-date">2019 - Present</span>
-                                </div>
-                                <ul class="factory-resume-list">
-                                    <li>Architected hotel and cinema management platforms serving thousands of bookings per quarter</li>
-                                    <li>Deployed ML-assisted Q&A pipelines with scikit-learn, reducing support queues by 40%</li>
-                                    <li>Conducted weekly tech talks and pair programming sessions to mentor junior developers</li>
-                                </ul>
-                            </div>
-                            
-                            <div class="factory-card factory-scroll-animate">
-                                <div class="factory-resume-header">
-                                    <div>
-                                        <h4 class="factory-resume-title">Software Development Intern</h4>
-                                        <p class="factory-resume-company">TMA Solutions</p>
-                                    </div>
-                                    <span class="factory-resume-date">May 2019 - Sep 2019</span>
-                                </div>
-                                <ul class="factory-resume-list">
-                                    <li>Customized Dynamics NAV ERP modules for finance and logistics workflows</li>
-                                    <li>Partnered with PM/QA on sprint rituals and prioritized high-impact deliverables</li>
-                                    <li>Shipped production-ready features with documentation, demo scripts, and automated tests</li>
-                                </ul>
-                            </div>
-                        </div>
-                        
-                        <!-- Education -->
-                        <div class="factory-mb-2xl">
-                            <h3 class="factory-mb-lg">Education</h3>
-                            
-                            <div class="factory-card factory-scroll-animate">
-                                <div class="factory-resume-header">
-                                    <div>
-                                        <h4 class="factory-resume-title">Bachelor of Software Engineering</h4>
-                                        <p class="factory-resume-company">Ton Duc Thang University</p>
-                                    </div>
-                                    <span class="factory-resume-date">2016 - 2020</span>
-                                </div>
-                                <p class="factory-text-secondary factory-mb-md">
-                                    <strong>Status:</strong> Graduated with Honors
+                            <div class="factory-portfolio-content">
+                                <h4 class="factory-portfolio-title">Cinema Booking Platform</h4>
+                                <p class="factory-text-secondary factory-text-small factory-mb-md">
+                                    Cinema booking platform with interactive seat selection and payment integration
                                 </p>
-                                <div class="factory-mb-md">
-                                    <strong>Specializations:</strong>
-                                    <ul class="factory-resume-list">
-                                        <li>Distributed Systems Architecture</li>
-                                        <li>Applied AI & Machine Learning</li>
-                                        <li>Human-Computer Interaction</li>
-                                    </ul>
+                                <div class="factory-portfolio-tech">
+                                    <span class="factory-tech-badge">Vue.js</span>
+                                    <span class="factory-tech-badge">Express</span>
+                                    <span class="factory-tech-badge">MongoDB</span>
+                                    <span class="factory-tech-badge">Stripe</span>
                                 </div>
-                                <div>
-                                    <strong>Activities:</strong>
-                                    <ul class="factory-resume-list">
-                                        <li>Led peer tutoring groups for algorithms and web engineering</li>
-                                    </ul>
+                                <div class="factory-mt-md">
+                                    <a href="https://github.com/BaoNguyen3oro/cinema-booking-app" target="_blank" class="factory-btn factory-btn-ghost factory-text-small">
+                                        View Project →
+                                    </a>
                                 </div>
                             </div>
                         </div>
                         
-                        <!-- Certifications -->
-                        <div>
-                            <h3 class="factory-mb-lg">Certifications</h3>
-                            
-                            <div class="factory-grid factory-grid-3">
-                                <div class="factory-card factory-scroll-animate">
-                                    <h5>CAIT TDTU</h5>
-                                    <p class="factory-text-small factory-text-secondary">Certificate of Appreciation</p>
-                                    <p class="factory-text-small factory-text-tertiary">2017 - 2019</p>
+                        <div class="factory-card factory-scroll-animate">
+                            <div class="factory-portfolio-content">
+                                <h4 class="factory-portfolio-title">ML Q&A Pipeline</h4>
+                                <p class="factory-text-secondary factory-text-small factory-mb-md">
+                                    Machine learning pipeline with NLP automation, reducing support tickets by 40%
+                                </p>
+                                <div class="factory-portfolio-tech">
+                                    <span class="factory-tech-badge">Python</span>
+                                    <span class="factory-tech-badge">scikit-learn</span>
+                                    <span class="factory-tech-badge">TensorFlow</span>
                                 </div>
-                                
-                                <div class="factory-card factory-scroll-animate">
-                                    <h5>FPT Software</h5>
-                                    <p class="factory-text-small factory-text-secondary">RPA Bootcamp Graduate</p>
-                                    <p class="factory-text-small factory-text-tertiary">2019</p>
-                                </div>
-                                
-                                <div class="factory-card factory-scroll-animate">
-                                    <h5>TMA Solutions</h5>
-                                    <p class="factory-text-small factory-text-secondary">Internship Transcript</p>
-                                    <p class="factory-text-small factory-text-tertiary">2019</p>
+                                <div class="factory-mt-md">
+                                    <a href="https://github.com/BaoNguyen3oro/ml-pipeline" target="_blank" class="factory-btn factory-btn-ghost factory-text-small">
+                                        View Project →
+                                    </a>
                                 </div>
                             </div>
                         </div>
                         
-                        <div class="factory-text-center factory-mt-xl">
-                            <a href="mailto:kanbo123@gmail.com?subject=Resume%20Request" class="factory-btn factory-btn-primary">
-                                Request Full Resume
+                        <div class="factory-card factory-scroll-animate">
+                            <div class="factory-portfolio-content">
+                                <h4 class="factory-portfolio-title">Microservices Architecture</h4>
+                                <p class="factory-text-secondary factory-text-small factory-mb-md">
+                                    Scalable microservice architecture with zero-downtime blue/green deployments
+                                </p>
+                                <div class="factory-portfolio-tech">
+                                    <span class="factory-tech-badge">Docker</span>
+                                    <span class="factory-tech-badge">Kubernetes</span>
+                                    <span class="factory-tech-badge">AWS</span>
+                                </div>
+                                <div class="factory-mt-md">
+                                    <a href="https://github.com/BaoNguyen3oro" target="_blank" class="factory-btn factory-btn-ghost factory-text-small">
+                                        View Project →
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="factory-card factory-scroll-animate">
+                            <div class="factory-portfolio-content">
+                                <h4 class="factory-portfolio-title">React Component Library</h4>
+                                <p class="factory-text-secondary factory-text-small factory-mb-md">
+                                    Comprehensive component library with Storybook docs and visual regression tests
+                                </p>
+                                <div class="factory-portfolio-tech">
+                                    <span class="factory-tech-badge">React</span>
+                                    <span class="factory-tech-badge">Storybook</span>
+                                    <span class="factory-tech-badge">TypeScript</span>
+                                </div>
+                                <div class="factory-mt-md">
+                                    <a href="https://github.com/BaoNguyen3oro" target="_blank" class="factory-btn factory-btn-ghost factory-text-small">
+                                        View Project →
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="factory-card factory-scroll-animate">
+                            <div class="factory-portfolio-content">
+                                <h4 class="factory-portfolio-title">Real-time Analytics Dashboard</h4>
+                                <p class="factory-text-secondary factory-text-small factory-mb-md">
+                                    Live data visualization dashboard using WebSocket and Redis pub/sub
+                                </p>
+                                <div class="factory-portfolio-tech">
+                                    <span class="factory-tech-badge">D3.js</span>
+                                    <span class="factory-tech-badge">WebSocket</span>
+                                    <span class="factory-tech-badge">Redis</span>
+                                </div>
+                                <div class="factory-mt-md">
+                                    <a href="https://github.com/BaoNguyen3oro/data-visualization" target="_blank" class="factory-btn factory-btn-ghost factory-text-small">
+                                        View Project →
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="factory-text-center factory-mt-xl">
+                        <a href="https://github.com/BaoNguyen3oro" target="_blank" class="factory-btn factory-btn-primary">
+                            View All Projects on GitHub
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="blog" class="factory-section">
+                <div class="factory-container">
+                    <div class="factory-text-center factory-mb-xl">
+                        <h2 class="factory-animate-fade-in">Recent Articles</h2>
+                        <p class="factory-text-large factory-text-secondary">
+                            Thoughts on software development, architecture, and technology
+                        </p>
+                    </div>
+                    
+                    <div class="factory-grid factory-grid-2">
+                        <div class="factory-card factory-scroll-animate">
+                            <div class="factory-blog-date">October 18, 2025</div>
+                            <h4 class="factory-mb-sm">Building Scalable Microservices with Docker and Kubernetes</h4>
+                            <p class="factory-text-secondary factory-text-small factory-mb-md">
+                                A comprehensive guide to designing and deploying microservices architectures using containerization
+                            </p>
+                            <a href="#" onclick="return false;" title="Coming soon" class="factory-btn factory-btn-ghost factory-text-small">
+                                Read More →
+                            </a>
+                        </div>
+                        
+                        <div class="factory-card factory-scroll-animate">
+                            <div class="factory-blog-date">October 11, 2025</div>
+                            <h4 class="factory-mb-sm">Implementing Real-time Features with WebSockets and Redis</h4>
+                            <p class="factory-text-secondary factory-text-small factory-mb-md">
+                                Learn how to build real-time applications with WebSocket connections and Redis pub/sub patterns
+                            </p>
+                            <a href="#" onclick="return false;" title="Coming soon" class="factory-btn factory-btn-ghost factory-text-small">
+                                Read More →
+                            </a>
+                        </div>
+                        
+                        <div class="factory-card factory-scroll-animate">
+                            <div class="factory-blog-date">September 27, 2025</div>
+                            <h4 class="factory-mb-sm">Machine Learning Pipeline Optimization Techniques</h4>
+                            <p class="factory-text-secondary factory-text-small factory-mb-md">
+                                Best practices for optimizing ML pipelines and reducing inference latency in production
+                            </p>
+                            <a href="#" onclick="return false;" title="Coming soon" class="factory-btn factory-btn-ghost factory-text-small">
+                                Read More →
+                            </a>
+                        </div>
+                        
+                        <div class="factory-card factory-scroll-animate">
+                            <div class="factory-blog-date">June 14, 2025</div>
+                            <h4 class="factory-mb-sm">Zero-downtime Deployment Strategies for Production</h4>
+                            <p class="factory-text-secondary factory-text-small factory-mb-md">
+                                Explore blue-green deployments, canary releases, and rolling updates for seamless production deploys
+                            </p>
+                            <a href="#" onclick="return false;" title="Coming soon" class="factory-btn factory-btn-ghost factory-text-small">
+                                Read More →
                             </a>
                         </div>
                     </div>
-                </section>
-                <!-- PAGE : RESUME -->
-    
-    
-    
-    
-    
-    
-                <!-- PAGE : PORTFOLIO -->
-                <section id="portfolio" class="factory-section factory-bg-secondary">
-                    <div class="factory-container">
-                        <div class="factory-text-center factory-mb-xl">
-                            <h2 class="factory-animate-fade-in">Featured Projects</h2>
-                            <p class="factory-text-large factory-text-secondary">
-                                A selection of my recent work and contributions
+                    
+                    <div class="factory-text-center factory-mt-xl">
+                        <a href="blog.html" class="factory-btn factory-btn-primary">
+                            View All Articles
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="factory-section factory-bg-secondary">
+                <div class="factory-container">
+                    <div class="factory-text-center factory-mb-xl">
+                        <h2 class="factory-animate-fade-in">Let's Connect</h2>
+                        <p class="factory-text-large factory-text-secondary">
+                            Open to new opportunities and collaborations
+                        </p>
+                    </div>
+                    
+                    <div class="factory-grid factory-grid-3 factory-mb-xl">
+                        <div class="factory-card factory-scroll-animate factory-text-center">
+                            <div class="factory-contact-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                            </div>
+                            <h5 class="factory-mb-sm">Location</h5>
+                            <p class="factory-text-secondary">Ho Chi Minh City, Vietnam</p>
+                            <p class="factory-text-tertiary factory-text-small">GMT+7 | Remote First</p>
+                        </div>
+                        
+                        <div class="factory-card factory-scroll-animate factory-text-center">
+                            <div class="factory-contact-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </div>
+                            <h5 class="factory-mb-sm">Email</h5>
+                            <p class="factory-text-secondary">
+                                <a href="mailto:kanbo123@gmail.com">kanbo123@gmail.com</a>
                             </p>
+                            <p class="factory-text-tertiary factory-text-small">Response within 24 hours</p>
                         </div>
                         
-                        <div class="factory-grid factory-grid-3">
-                            <!-- Project 1 -->
-                            <div class="factory-card factory-scroll-animate">
-                                <div class="factory-portfolio-content">
-                                    <h4 class="factory-portfolio-title">Hotel Management System</h4>
-                                    <p class="factory-text-secondary factory-text-small factory-mb-md">
-                                        Full-stack hotel management system with real-time booking and analytics dashboard
-                                    </p>
-                                    <div class="factory-portfolio-tech">
-                                        <span class="factory-tech-badge">React</span>
-                                        <span class="factory-tech-badge">Node.js</span>
-                                        <span class="factory-tech-badge">PostgreSQL</span>
-                                    </div>
-                                    <div class="factory-mt-md">
-                                        <a href="https://github.com/BaoNguyen3oro/hotel-management-system" target="_blank" class="factory-btn factory-btn-ghost factory-text-small">
-                                            View Project →
-                                        </a>
-                                    </div>
-                                </div>
+                        <div class="factory-card factory-scroll-animate factory-text-center">
+                            <div class="factory-contact-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
                             </div>
-                            
-                            <!-- Project 2 -->
-                            <div class="factory-card factory-scroll-animate">
-                                <div class="factory-portfolio-content">
-                                    <h4 class="factory-portfolio-title">Cinema Booking Platform</h4>
-                                    <p class="factory-text-secondary factory-text-small factory-mb-md">
-                                        Cinema booking platform with interactive seat selection and payment integration
-                                    </p>
-                                    <div class="factory-portfolio-tech">
-                                        <span class="factory-tech-badge">Vue.js</span>
-                                        <span class="factory-tech-badge">Express</span>
-                                        <span class="factory-tech-badge">MongoDB</span>
-                                        <span class="factory-tech-badge">Stripe</span>
-                                    </div>
-                                    <div class="factory-mt-md">
-                                        <a href="https://github.com/BaoNguyen3oro/cinema-booking-app" target="_blank" class="factory-btn factory-btn-ghost factory-text-small">
-                                            View Project →
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <!-- Project 3 -->
-                            <div class="factory-card factory-scroll-animate">
-                                <div class="factory-portfolio-content">
-                                    <h4 class="factory-portfolio-title">ML Q&A Pipeline</h4>
-                                    <p class="factory-text-secondary factory-text-small factory-mb-md">
-                                        Machine learning pipeline with NLP automation, reducing support tickets by 40%
-                                    </p>
-                                    <div class="factory-portfolio-tech">
-                                        <span class="factory-tech-badge">Python</span>
-                                        <span class="factory-tech-badge">scikit-learn</span>
-                                        <span class="factory-tech-badge">TensorFlow</span>
-                                    </div>
-                                    <div class="factory-mt-md">
-                                        <a href="https://github.com/BaoNguyen3oro/ml-pipeline" target="_blank" class="factory-btn factory-btn-ghost factory-text-small">
-                                            View Project →
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <!-- Project 4 -->
-                            <div class="factory-card factory-scroll-animate">
-                                <div class="factory-portfolio-content">
-                                    <h4 class="factory-portfolio-title">Microservices Architecture</h4>
-                                    <p class="factory-text-secondary factory-text-small factory-mb-md">
-                                        Scalable microservice architecture with zero-downtime blue/green deployments
-                                    </p>
-                                    <div class="factory-portfolio-tech">
-                                        <span class="factory-tech-badge">Docker</span>
-                                        <span class="factory-tech-badge">Kubernetes</span>
-                                        <span class="factory-tech-badge">AWS</span>
-                                    </div>
-                                    <div class="factory-mt-md">
-                                        <a href="https://github.com/BaoNguyen3oro" target="_blank" class="factory-btn factory-btn-ghost factory-text-small">
-                                            View Project →
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <!-- Project 5 -->
-                            <div class="factory-card factory-scroll-animate">
-                                <div class="factory-portfolio-content">
-                                    <h4 class="factory-portfolio-title">React Component Library</h4>
-                                    <p class="factory-text-secondary factory-text-small factory-mb-md">
-                                        Comprehensive component library with Storybook docs and visual regression tests
-                                    </p>
-                                    <div class="factory-portfolio-tech">
-                                        <span class="factory-tech-badge">React</span>
-                                        <span class="factory-tech-badge">Storybook</span>
-                                        <span class="factory-tech-badge">TypeScript</span>
-                                    </div>
-                                    <div class="factory-mt-md">
-                                        <a href="https://github.com/BaoNguyen3oro" target="_blank" class="factory-btn factory-btn-ghost factory-text-small">
-                                            View Project →
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <!-- Project 6 -->
-                            <div class="factory-card factory-scroll-animate">
-                                <div class="factory-portfolio-content">
-                                    <h4 class="factory-portfolio-title">Real-time Analytics Dashboard</h4>
-                                    <p class="factory-text-secondary factory-text-small factory-mb-md">
-                                        Live data visualization dashboard using WebSocket and Redis pub/sub
-                                    </p>
-                                    <div class="factory-portfolio-tech">
-                                        <span class="factory-tech-badge">D3.js</span>
-                                        <span class="factory-tech-badge">WebSocket</span>
-                                        <span class="factory-tech-badge">Redis</span>
-                                    </div>
-                                    <div class="factory-mt-md">
-                                        <a href="https://github.com/BaoNguyen3oro/data-visualization" target="_blank" class="factory-btn factory-btn-ghost factory-text-small">
-                                            View Project →
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="factory-text-center factory-mt-xl">
-                            <a href="https://github.com/BaoNguyen3oro" target="_blank" class="factory-btn factory-btn-primary">
-                                View All Projects on GitHub
-                            </a>
+                            <h5 class="factory-mb-sm">Phone</h5>
+                            <p class="factory-text-secondary">
+                                <a href="tel:+84943771699">+84 943 771 699</a>
+                            </p>
+                            <p class="factory-text-tertiary factory-text-small">For urgent matters</p>
                         </div>
                     </div>
-                </section>
-                <!-- PAGE : PORTFOLIO -->
-    
-    
-    
-    
-    
-    
-    
-                <!-- PAGE : BLOG -->
-                <section id="blog" class="factory-section">
-                    <div class="factory-container">
-                        <div class="factory-text-center factory-mb-xl">
-                            <h2 class="factory-animate-fade-in">Recent Articles</h2>
-                            <p class="factory-text-large factory-text-secondary">
-                                Thoughts on software development, architecture, and technology
-                            </p>
-                        </div>
-                        
+                    
+                    <div class="factory-card factory-scroll-animate factory-mb-xl">
                         <div class="factory-grid factory-grid-2">
-                            <!-- Blog Post 1 -->
-                            <div class="factory-card factory-scroll-animate">
-                                <div class="factory-blog-date">October 18, 2025</div>
-                                <h4 class="factory-mb-sm">Building Scalable Microservices with Docker and Kubernetes</h4>
-                                <p class="factory-text-secondary factory-text-small factory-mb-md">
-                                    A comprehensive guide to designing and deploying microservices architectures using containerization
+                            <div>
+                                <h4 class="factory-mb-md">Current Availability</h4>
+                                <div class="factory-availability-badge">
+                                    <span class="factory-status-dot"></span>
+                                    <span>Open to New Opportunities</span>
+                                </div>
+                                <p class="factory-text-secondary factory-mt-md">
+                                    Actively considering full-time roles, contract projects, and consulting opportunities.
                                 </p>
-                                <a href="#" onclick="return false;" title="Coming soon" class="factory-btn factory-btn-ghost factory-text-small">
-                                    Read More →
-                                </a>
                             </div>
                             
-                            <!-- Blog Post 2 -->
-                            <div class="factory-card factory-scroll-animate">
-                                <div class="factory-blog-date">October 11, 2025</div>
-                                <h4 class="factory-mb-sm">Implementing Real-time Features with WebSockets and Redis</h4>
-                                <p class="factory-text-secondary factory-text-small factory-mb-md">
-                                    Learn how to build real-time applications with WebSocket connections and Redis pub/sub patterns
-                                </p>
-                                <a href="#" onclick="return false;" title="Coming soon" class="factory-btn factory-btn-ghost factory-text-small">
-                                    Read More →
-                                </a>
-                            </div>
-                            
-                            <!-- Blog Post 3 -->
-                            <div class="factory-card factory-scroll-animate">
-                                <div class="factory-blog-date">September 27, 2025</div>
-                                <h4 class="factory-mb-sm">Machine Learning Pipeline Optimization Techniques</h4>
-                                <p class="factory-text-secondary factory-text-small factory-mb-md">
-                                    Best practices for optimizing ML pipelines and reducing inference latency in production
-                                </p>
-                                <a href="#" onclick="return false;" title="Coming soon" class="factory-btn factory-btn-ghost factory-text-small">
-                                    Read More →
-                                </a>
-                            </div>
-                            
-                            <!-- Blog Post 4 -->
-                            <div class="factory-card factory-scroll-animate">
-                                <div class="factory-blog-date">June 14, 2025</div>
-                                <h4 class="factory-mb-sm">Zero-downtime Deployment Strategies for Production</h4>
-                                <p class="factory-text-secondary factory-text-small factory-mb-md">
-                                    Explore blue-green deployments, canary releases, and rolling updates for seamless production deploys
-                                </p>
-                                <a href="#" onclick="return false;" title="Coming soon" class="factory-btn factory-btn-ghost factory-text-small">
-                                    Read More →
-                                </a>
+                            <div>
+                                <h4 class="factory-mb-md">Specializations</h4>
+                                <ul class="factory-specialization-list">
+                                    <li>Full-stack web development</li>
+                                    <li>Cloud infrastructure (AWS, Docker, K8s)</li>
+                                    <li>AI/ML pipeline integration</li>
+                                    <li>Real-time systems architecture</li>
+                                    <li>DevOps automation</li>
+                                </ul>
                             </div>
                         </div>
-                        
-                        <div class="factory-text-center factory-mt-xl">
-                            <a href="blog.html" class="factory-btn factory-btn-primary">
-                                View All Articles
+                    </div>
+                    
+                    <div class="factory-text-center">
+                        <h4 class="factory-mb-lg">Connect with Me</h4>
+                        <div class="factory-social-links">
+                            <a href="https://github.com/BaoNguyen3oro" target="_blank" rel="noopener" class="factory-social-link" aria-label="GitHub">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </a>
+                            <a href="https://www.facebook.com/HaveAGreateDayWhenUSeeMe" target="_blank" rel="noopener" class="factory-social-link" aria-label="Facebook">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                                </svg>
                             </a>
                         </div>
                     </div>
-                </section>
-                <!-- PAGE : BLOG -->
-    
-    
-    
-                
-    
-                <!-- PAGE : CONTACT -->
-                <section id="contact" class="factory-section factory-bg-secondary">
-                    <div class="factory-container">
-                        <div class="factory-text-center factory-mb-xl">
-                            <h2 class="factory-animate-fade-in">Let's Connect</h2>
-                            <p class="factory-text-large factory-text-secondary">
-                                Open to new opportunities and collaborations
-                            </p>
-                        </div>
-                        
-                        <div class="factory-grid factory-grid-3 factory-mb-xl">
-                            <!-- Location Card -->
-                            <div class="factory-card factory-scroll-animate factory-text-center">
-                                <div class="factory-contact-icon">
-                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                                        <circle cx="12" cy="10" r="3"/>
-                                    </svg>
-                                </div>
-                                <h5 class="factory-mb-sm">Location</h5>
-                                <p class="factory-text-secondary">Ho Chi Minh City, Vietnam</p>
-                                <p class="factory-text-tertiary factory-text-small">GMT+7 | Remote First</p>
-                            </div>
-                            
-                            <!-- Email Card -->
-                            <div class="factory-card factory-scroll-animate factory-text-center">
-                                <div class="factory-contact-icon">
-                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                                        <polyline points="22,6 12,13 2,6"/>
-                                    </svg>
-                                </div>
-                                <h5 class="factory-mb-sm">Email</h5>
-                                <p class="factory-text-secondary">
-                                    <a href="mailto:kanbo123@gmail.com">kanbo123@gmail.com</a>
-                                </p>
-                                <p class="factory-text-tertiary factory-text-small">Response within 24 hours</p>
-                            </div>
-                            
-                            <!-- Phone Card -->
-                            <div class="factory-card factory-scroll-animate factory-text-center">
-                                <div class="factory-contact-icon">
-                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-                                    </svg>
-                                </div>
-                                <h5 class="factory-mb-sm">Phone</h5>
-                                <p class="factory-text-secondary">
-                                    <a href="tel:+84943771699">+84 943 771 699</a>
-                                </p>
-                                <p class="factory-text-tertiary factory-text-small">For urgent matters</p>
-                            </div>
-                        </div>
-                        
-                        <!-- Availability & Specializations -->
-                        <div class="factory-card factory-scroll-animate factory-mb-xl">
-                            <div class="factory-grid factory-grid-2">
-                                <div>
-                                    <h4 class="factory-mb-md">Current Availability</h4>
-                                    <div class="factory-availability-badge">
-                                        <span class="factory-status-dot"></span>
-                                        <span>Open to New Opportunities</span>
-                                    </div>
-                                    <p class="factory-text-secondary factory-mt-md">
-                                        Actively considering full-time roles, contract projects, and consulting opportunities.
-                                    </p>
-                                </div>
-                                
-                                <div>
-                                    <h4 class="factory-mb-md">Specializations</h4>
-                                    <ul class="factory-specialization-list">
-                                        <li>Full-stack web development</li>
-                                        <li>Cloud infrastructure (AWS, Docker, K8s)</li>
-                                        <li>AI/ML pipeline integration</li>
-                                        <li>Real-time systems architecture</li>
-                                        <li>DevOps automation</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Social Links -->
-                        <div class="factory-text-center">
-                            <h4 class="factory-mb-lg">Connect with Me</h4>
-                            <div class="factory-social-links">
-                                <a href="https://github.com/BaoNguyen3oro" target="_blank" rel="noopener" class="factory-social-link" aria-label="GitHub">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                                    </svg>
-                                </a>
-                                <a href="https://www.facebook.com/HaveAGreateDayWhenUSeeMe" target="_blank" rel="noopener" class="factory-social-link" aria-label="Facebook">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                            
-                            
-                            <!-- .contact-form -->
-                            <!-- <div class="contact-form">
-                            
-                                <form id="contact-form" class="validate-form" method="post" action="http://themes.pixelwars.org/empathy-html/demo/send-mail.php">
-                                
-                                    
-                                    <input type="hidden" name="subject" id="subject" value="You have a new message from Photographer!">
-                                    
-                                    <p>
-                                      <label for="name">NAME</label>
-                                      <input type="text" name="name" id="name" class="required">
-                                    </p>
-                                    
-                                    <p>
-                                      <label for="email">EMAIL</label>
-                                      <input type="text" name="email" id="email" class="required email">
-                                    </p>
-                                    
-                                    <p class="antispam">Leave this empty if you are a human :
-                                        <br /><input name="url" />
-                                    </p>
-                                    
-                                    <p>
-                                      <label for="message">MESSAGE</label>
-                                      <textarea name="message" id="message" class="required"></textarea>
-                                    </p>
-                                    
-                                    <p>
-                                      <button class="submit button">Send</button>
-                                    </p>
-                                
-                                </form>
-                            
-                            </div>  -->
-                            <!-- .contact-form -->
-                    
-                    
-                            
-                        
-                            
-    					</div>
-                        <!-- .layout-medium -->
-                    </div>
-                    <!-- .content -->
-                </section>
-                <!-- PAGE : CONTACT -->
+                </div>
+            </section>
+        </div>
 
+        <footer class="factory-footer">
+            <div class="factory-container">
+                <p class="factory-text-center factory-text-tertiary factory-text-small">
+                    © 2025 Nguyen Quoc Bao. All rights reserved.
+                </p>
+            </div>
+        </footer>
+    </div>
 
-
-            <!-- InstanceEndEditable -->
-            
-            
-                
-			</div>
-            <!-- .site-main -->
-            
-            
-            
-            
-		</div>
-        <!-- PAGE -->
-        
-        
-        
-        
-        
-        <!-- InstanceBeginEditable name="Body-End-Content" -->
-
-
-        <!-- PORTFOLIO SINGLE AJAX CONTENT CONTAINER -->
-        <div class="p-overlay"></div>
-        <div class="p-overlay"></div>
-    
-    
-        <!-- ALERT : used for contact form mail delivery alert -->
-        <div class="site-alert animated"></div>
-
-
-    	<!-- InstanceEndEditable -->
-        
-        
-		
-        
-        <!-- SCRIPTS -->
-        <script src="js/jquery.address-1.5.min.js"></script>
-        <script src="js/nprogress/nprogress.js"></script>
-        <script src="js/fastclick.js"></script>
-        <script src="js/typist.js"></script>
-		<script src="js/imagesloaded.pkgd.min.js"></script>
-        <script src="js/jquery.isotope.min.js"></script>
-        <script src="js/jquery.fitvids.js"></script>
-        <script src="js/jquery.validate.min.js"></script>
-        <script src="js/jquery.uniform/jquery.uniform.min.js"></script>
-        <script src="js/jquery.magnific-popup/jquery.magnific-popup.min.js"></script>
-        <script src="js/socialstream.jquery.js"></script>
-        <script src="js/jarallax.min.js"></script>
-        <script src="js/jarallax-video.min.js"></script>
-        <script src="js/main.js"></script>
-        <script src="js/factory-theme.js"></script>
-        
-	</body>
-<!-- InstanceEnd -->
-
+    <script src="js/factory-theme.js"></script>
+</body>
 </html>
